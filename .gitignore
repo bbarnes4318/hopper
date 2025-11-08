@@ -148,6 +148,13 @@ cython_debug/
 *.wma
 *.aac
 
+# Video files
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
 # Transcription outputs
 transcriptions/
 transcripts_output/
@@ -155,6 +162,9 @@ analysis_results/
 results/
 downloaded_audio_files/
 audio_files/
+
+# Archive folder (may contain large files)
+archive/
 
 # FFmpeg
 ffmpeg/
