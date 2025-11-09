@@ -3,10 +3,6 @@ region: nyc
 
 services:
   - name: api
-    github:
-      repo: bbarnes4318/hopwhistle
-      branch: main
-      deploy_on_push: true
     dockerfile_path: api/Dockerfile
     source_dir: /
     http_port: 8080
@@ -34,10 +30,6 @@ services:
       - path: /api
 
   - name: web
-    github:
-      repo: bbarnes4318/hopwhistle
-      branch: main
-      deploy_on_push: true
     dockerfile_path: web/Dockerfile
     source_dir: /
     http_port: 3000
