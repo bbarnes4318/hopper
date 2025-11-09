@@ -181,6 +181,11 @@ urls.txt
 urls3.txt
 urls2.txt
 
+# Credentials and secrets
+google_credentials.json
+*credentials*.json
+*_credentials.json
+
 # Temporary files
 temp_*
 tmp_*
