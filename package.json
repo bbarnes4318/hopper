@@ -1,0 +1,7 @@
+{
+  "name": "hopwhistle",
+  "version": "1.0.0",
+  "description": "Hopwhistle monorepo - see .do/app.yaml for deployment config",
+  "private": true
+}
+
