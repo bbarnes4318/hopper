@@ -6,11 +6,13 @@ const nextConfig = {
   images: {
     domains: [],
   },
-  webpack: (config) => {
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      '@': path.resolve(__dirname),
-    };
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.alias = {
+        ...config.resolve.alias,
+        '@': path.resolve(__dirname),
+      };
+    }
     return config;
   },
   async rewrites() {
