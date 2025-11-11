@@ -32,7 +32,7 @@ services:
         value: "true"
       - key: CORS_ORIGINS
         scope: RUN_TIME
-        value: '["https://hopper-web.ondigitalocean.app"]'
+        value: '["*"]'
       - key: ENVIRONMENT
         scope: RUN_TIME
         value: "production"
