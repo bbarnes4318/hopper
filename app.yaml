@@ -1,4 +1,4 @@
-name: hopwhistle
+name: hopper
 region: nyc
 
 services:
@@ -32,7 +32,7 @@ services:
         value: "true"
       - key: CORS_ORIGINS
         scope: RUN_TIME
-        value: '["https://hopwhistle-web.ondigitalocean.app"]'
+        value: '["https://hopper-web.ondigitalocean.app"]'
       - key: ENVIRONMENT
         scope: RUN_TIME
         value: "production"
@@ -60,9 +60,9 @@ services:
     envs:
       - key: NEXT_PUBLIC_API_URL
         scope: RUN_TIME
-        value: "https://hopwhistle-api.ondigitalocean.app"
+        value: "https://hopper-api.ondigitalocean.app"
       - key: NEXT_PUBLIC_WS_URL
         scope: RUN_TIME
-        value: "wss://hopwhistle-api.ondigitalocean.app"
+        value: "wss://hopper-api.ondigitalocean.app"
     routes:
       - path: /
