@@ -66,12 +66,3 @@ services:
         value: "wss://hopwhistle-api.ondigitalocean.app"
     routes:
       - path: /
-
-databases:
-  - name: hopwhistle
-    engine: PG
-    version: "18"
-    production: true
-    cluster_name: hopwhistle
-    db_name: defaultdb
-    db_user: doadmin
