@@ -29,5 +29,7 @@ COPY --from=builder /app/node_modules ./node_modules
 
 EXPOSE 3000
 
-CMD ["npm", "start"]
+ENV PORT 3000
+
+CMD ["sh", "-c", "next start -p ${PORT:-3000} -H 0.0.0.0"]
 

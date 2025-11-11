@@ -4,7 +4,7 @@ region: nyc
 services:
   - name: api
     github:
-      repo: bbarnes4318/hoppy
+      repo: bbarnes4318/hopper
       branch: main
       deploy_on_push: true
     dockerfile_path: api/Dockerfile
@@ -41,7 +41,7 @@ services:
 
   - name: web
     github:
-      repo: bbarnes4318/hoppy
+      repo: bbarnes4318/hopper
       branch: main
       deploy_on_push: true
     dockerfile_path: web/Dockerfile
